@@ -12,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar";
+import { Sidebar } from "@/components/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,20 +40,7 @@ export default function RootLayout({
             <div className="bg-slate-600">
               {children}                  
             </div>
-            <div className="hidden md:block w-80 bg-slate-300">
-              <Card>
-                <CardHeader>
-                  <CardTitle>
-                    Site description
-                  </CardTitle>                  
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Blackbuck is a website for posting and sharing photos of animals.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>      
+            <Sidebar/> 
           </div>
 
         </ThemeProvider> 
