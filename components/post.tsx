@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 import {
@@ -40,7 +42,12 @@ export function Post() {
                                 <div className="p-1">
                                 <Card>
                                     <CardContent className="flex aspect-square items-center justify-center p-6">
-                                        <img src="https://github.com/shadcn.png"/>
+                                        <Image
+                                        src="/blackbuck.jpg"
+                                        alt="Blackbuck picture"
+                                        width={1000}
+                                        height={1000}
+                                        />
                                     </CardContent>
                                 </Card>
                                 </div>
