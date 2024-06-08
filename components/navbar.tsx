@@ -8,7 +8,8 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import { HomeIcon, SearchIcon, PlusIcon, HeartIcon, SettingsIcon} from "lucide-react"
+import { HomeIcon, SearchIcon, PlusIcon, HeartIcon, SettingsIcon, PlusCircleIcon} from "lucide-react"
+import { Button } from "./ui/button";
 
 export function Navbar() {
     return(
@@ -41,12 +42,6 @@ export function Navbar() {
                             検索
                         </div>
                     </Link>
-                    <Link href="./post" className="flex items-center justify-center">
-                        <PlusIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            投稿
-                        </div>
-                    </Link>
                     <Link href="./like" className="flex items-center justify-center">
                         <HeartIcon className="h-8 w-8" />
                         <div className="hidden md:block">
@@ -71,13 +66,14 @@ export function Navbar() {
                 </div>
             </Card>
             <Card>
-                <div className="flex md:flex-col">
-                    <Link href="./post" className="flex items-center justify-center">
-                        <PlusIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            投稿
-                        </div>
-                    </Link>                    
+                <div className="flex items-center justify-center m-4">
+                    <Button>
+                    <PlusCircleIcon className="h-8 w-8 mr-2" />
+                    <div className="hidden md:block">
+                        投稿
+                    </div>                             
+                    </Button>
+            
                 </div>
             </Card>
         </div>
