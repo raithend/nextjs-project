@@ -8,36 +8,29 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-
-      <Posts/>
-
-      <div>
-        <DropdownMenu>
-          <DropdownMenuTrigger>Open</DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>Blackbuck</DropdownMenuLabel>
-            <DropdownMenuItem>ホーム</DropdownMenuItem>
-            <DropdownMenuItem>検索</DropdownMenuItem>
-            <DropdownMenuItem>投稿</DropdownMenuItem>
-            <DropdownMenuItem>いいね</DropdownMenuItem>
-            <DropdownMenuItem>アバター</DropdownMenuItem>
-            <DropdownMenuItem>設定</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+    <main className="flex flex-col items-center">
+      <div className="block md:hidden">
+        sm
       </div>
-
+      <div className="block lg:hidden">
+        md
+      </div>
+      <div className="block 2xl:hidden">
+        lg
+      </div>
+      <div className="block 3xl:hidden">
+        2xl
+      </div>
+      <Posts/>
       <div>
        <ModeToggle/>
       </div>
-
     </main>
   );
 }
