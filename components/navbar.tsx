@@ -65,17 +65,17 @@ export function Navbar() {
                     </Link>
                 </div>
             </Card>
-            <Card>
-                <div className="flex items-center justify-center m-4">
-                    <Button>
-                    <PlusCircleIcon className="h-8 w-8 mr-2" />
-                    <div className="hidden md:block">
+            <div className="flex items-center justify-center">
+                <div className="hidden md:block mt-4">
+                <Button className="p-6">
+                    <PlusCircleIcon className="h-8 w-8 mr-4" />
+                    <div>
                         投稿
                     </div>                             
-                    </Button>
-            
+                </Button>                      
                 </div>
-            </Card>
+      
+            </div>
         </div>
     )
 }

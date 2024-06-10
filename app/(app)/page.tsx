@@ -21,10 +21,13 @@ export default function Page() {
       <div className="block lg:hidden">
         md
       </div>
-      <div className="block 2xl:hidden">
+      <div className="block xl:hidden">
         lg
       </div>
-      <div className="block 3xl:hidden">
+      <div className="block 2xl:hidden">
+        xl
+      </div>
+      <div>
         2xl
       </div>
       <Posts/>
