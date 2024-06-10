@@ -18,6 +18,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import { HeartIcon, MessageCircleIcon } from "lucide-react"
 
 export function Post() {
     return(
@@ -41,7 +42,7 @@ export function Post() {
                             <CarouselItem key={index}>
                                 <div className="p-1">
                                 <Card>
-                                    <CardContent className="flex aspect-square items-center justify-center p-6">
+                                    <CardContent className="flex aspect-square items-center justify-center">
                                         <Image
                                         src="/blackbuck.jpg"
                                         alt="Blackbuck picture"
@@ -61,15 +62,21 @@ export function Post() {
                 </CardContent>
 
                 <CardFooter>
-                    <div className="flex flex-col">
-                        <div className="my-1">
-                            Taxonomy
+                    <div>
+                        <div>
+                            <div className="my-1">
+                                Taxonomy
+                            </div>
+                            <div className="my-1">
+                                Location
+                            </div>
+                            <div className="my-1">
+                                Description
+                            </div>
                         </div>
-                        <div className="my-1">
-                            Location
-                        </div>
-                        <div className="my-1">
-                            Description
+                        <div className="mt-4 flex justify-between">
+                            <HeartIcon/>
+                            <MessageCircleIcon/>
                         </div>
                     </div>
                 </CardFooter>
