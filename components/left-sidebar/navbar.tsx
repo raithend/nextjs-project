@@ -9,11 +9,11 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { HomeIcon, SearchIcon, PlusIcon, HeartIcon, SettingsIcon, PlusCircleIcon} from "lucide-react"
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 export function Navbar() {
     return(
-        <div className="w-80 bg-slate-300">            
+        <div>            
             <Card>
                 <CardHeader className="flex flex-row">
                     <div>
@@ -65,17 +65,6 @@ export function Navbar() {
                     </Link>
                 </div>
             </Card>
-            <div className="flex items-center justify-center">
-                <div className="hidden md:block mt-4">
-                <Button className="p-6">
-                    <PlusCircleIcon className="h-8 w-8 mr-4" />
-                    <div>
-                        投稿
-                    </div>                             
-                </Button>                      
-                </div>
-      
-            </div>
         </div>
     )
 }

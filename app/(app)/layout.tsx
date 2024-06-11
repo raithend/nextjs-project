@@ -1,5 +1,6 @@
-import { Navbar } from "@/components/navbar";
-import { Sidebar } from "@/components/sidebar";
+import { LeftSidebar } from "@/components/left-sidebar/left-sidebar";
+import { Navbar } from "@/components/left-sidebar/navbar";
+import { RightSidebar } from "@/components/right-sidebar/right-sidebar";
 
 export default function Layout({
   children,
@@ -8,12 +9,12 @@ export default function Layout({
 }>) {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-center">
-      <Navbar />
+      <LeftSidebar />
       <div>
         {children}                  
       </div>
       <div>
-        <Sidebar/>
+        <RightSidebar/>
       </div>
     </div>
   );
