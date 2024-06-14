@@ -14,7 +14,7 @@ import { SearchIcon } from "lucide-react"
 
 export function RightSidebar() {
     return(
-        <div className="hidden md:block w-80 bg-slate-300">
+        <div>
             <Card>
                 <CardHeader>
                     <CardTitle>
