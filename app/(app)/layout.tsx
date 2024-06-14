@@ -13,7 +13,7 @@ export default function Layout({
 					<LeftSidebar/>			
 				</div>			
 			</div>
-			<div className="w-320 flex-initial">
+			<div className="w-160 flex-initial">
 				{children}
 			</div>
 			<div className="hidden md:block w-80 flex-initial">
