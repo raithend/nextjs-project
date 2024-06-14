@@ -23,45 +23,48 @@ import { UserRoundIcon, HeartIcon, MessageCircleIcon } from "lucide-react"
 export function Post() {
     return(
         <div>
-            <Card className="px-10">
-                <CardHeader className="flex-row">
-                    <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback><UserRoundIcon/></AvatarFallback>
-                    </Avatar>
-                    <CardDescription className="pl-2">
-                        UserID
-                    </CardDescription>
+            <Card className="px-16">
+                <CardHeader className="flex-row items-center bg-slate-200 p-2">
+                    <div>
+                        <Avatar>
+                            <AvatarImage src="https://github.com/shadcn.png" />
+                            <AvatarFallback><UserRoundIcon/></AvatarFallback>
+                        </Avatar>
+                    </div>
+                    <div className="pl-2">
+                        <CardDescription className="text-base font-semibold">
+                            UserName
+                        </CardDescription>
+                        <CardDescription>
+                            UserID
+                        </CardDescription>
+                    </div>
                 </CardHeader>
 
-                <CardContent>
-                    <div>
-                        <Carousel className="w-full max-w-xs">
-                        <CarouselContent>
-                            {Array.from({ length: 5 }).map((_, index) => (
-                            <CarouselItem key={index}>
-                                <div className="p-1">
-                                <Card>
-                                    <CardContent className="flex aspect-square items-center justify-center p-0">
-                                        <Image
-                                        src="/blackbuck.jpg"
-                                        alt="Blackbuck picture"
-                                        width={1000}
-                                        height={1000}
-                                        />
-                                    </CardContent>
-                                </Card>
-                                </div>
-                            </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
-                        </Carousel>
-                    </div>
+                <CardContent className="p-0">
+                    <Carousel className="w-full max-w-xs">
+                    <CarouselContent>
+                        {Array.from({ length: 5 }).map((_, index) => (
+                        <CarouselItem key={index}>
+                        <Card>
+                            <CardContent className="flex aspect-square items-center justify-center p-0">
+                                <Image
+                                src="/blackbuck.jpg"
+                                alt="Blackbuck picture"
+                                width={1000}
+                                height={1000}
+                                />
+                            </CardContent>
+                        </Card>
+                        </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                    </Carousel>
                 </CardContent>
 
-                <CardFooter>
+                <CardFooter className="bg-slate-200 p-2">
                     <div>
                         <div>
                             <div className="my-1">
