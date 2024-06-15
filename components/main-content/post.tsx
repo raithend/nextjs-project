@@ -5,7 +5,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
     Card,
     CardContent,
-    CardDescription,
     CardFooter,
     CardHeader,
   } from "@/components/ui/card"
@@ -32,12 +31,12 @@ export function Post() {
                         </Avatar>
                     </div>
                     <div className="pl-2">
-                        <CardDescription className="text-base font-semibold">
+                        <div className="text-base font-semibold">
                             UserName
-                        </CardDescription>
-                        <CardDescription>
+                        </div>
+                        <div>
                             UserID
-                        </CardDescription>
+                        </div>
                     </div>
                 </CardHeader>
 
