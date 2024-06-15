@@ -31,7 +31,7 @@ export function SmartphoneNavbar() {
                             <HeartIcon className="h-8 w-8" />
                         </Button>
                     </Link>
-                    <Link href="l/setting">
+                    <Link href="./setting">
                         <Button variant="ghost" size="icon">
                             <SettingsIcon className="h-8 w-8" />
                         </Button>

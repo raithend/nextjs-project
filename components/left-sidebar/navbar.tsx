@@ -62,7 +62,7 @@ export function Navbar() {
                             </div>
                         </Button>
                     </Link>
-                    <Link href="l/setting">
+                    <Link href="./setting">
                         <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
                             <SettingsIcon className="h-8 w-8" />
                             <div className="hidden lg:block text-2xl m-4">
