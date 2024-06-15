@@ -2,6 +2,7 @@ import { ModeToggle } from "@/components/ui/mode-toggle"
 
 import { Posts } from "./posts";
 import { PostButton } from "../post-button";
+import { SmartphoneNavbar } from "./smartphone-navbar";
 
 export function MainContents() {
     return(
@@ -28,6 +29,9 @@ export function MainContents() {
 
             <div>
                 <ModeToggle/>
+            </div>
+            <div className="block md:hidden w-full fixed bottom-0">
+                <SmartphoneNavbar/>
             </div>
         </div>
     )
