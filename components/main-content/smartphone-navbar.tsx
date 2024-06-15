@@ -16,7 +16,7 @@ export function SmartphoneNavbar() {
                             <HomeIcon className="h-8 w-8" />
                         </Button>
                     </Link>
-                    <Link href="./follower">
+                    <Link href="./follow">
                         <Button variant="ghost" size="icon">
                             <UserRoundCheckIcon className="h-8 w-8" />
                         </Button>
