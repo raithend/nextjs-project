@@ -33,7 +33,7 @@ export function Navbar() {
                     <Link href="/">
                         <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
                             <HomeIcon className="h-8 w-8" />
-                            <div className="hidden lg:block text-2xl m-4">
+                            <div className="hidden lg:block text-xl m-4">
                                 ホーム
                             </div>
                         </Button>
@@ -41,7 +41,7 @@ export function Navbar() {
                     <Link href="./follow">
                         <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
                             <UserRoundCheckIcon className="h-8 w-8" />
-                            <div className="hidden lg:block text-2xl m-4">
+                            <div className="hidden lg:block text-xl m-4">
                                 フォロー
                             </div>
                         </Button>
@@ -49,7 +49,7 @@ export function Navbar() {
                     <Link href="./notification">
                         <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
                             <BellIcon className="h-8 w-8" />
-                            <div className="hidden lg:block text-2xl m-4">
+                            <div className="hidden lg:block text-xl m-4">
                                 通知
                             </div>
                         </Button>
@@ -57,7 +57,7 @@ export function Navbar() {
                     <Link href="./like">
                         <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
                             <HeartIcon className="h-8 w-8" />
-                            <div className="hidden lg:block text-2xl m-4">
+                            <div className="hidden lg:block text-xl m-4">
                                 いいね
                             </div>
                         </Button>
@@ -65,7 +65,7 @@ export function Navbar() {
                     <Link href="./setting">
                         <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
                             <SettingsIcon className="h-8 w-8" />
-                            <div className="hidden lg:block text-2xl m-4">
+                            <div className="hidden lg:block text-xl m-4">
                                 設定
                             </div>
                         </Button>
@@ -76,7 +76,7 @@ export function Navbar() {
                                 <AvatarImage src="https://github.com/shadcn.png" />
                                 <AvatarFallback><UserRoundIcon/></AvatarFallback>  
                             </Avatar>                            
-                            <div className="hidden lg:block text-2xl m-4">
+                            <div className="hidden lg:block text-xl m-4">
                                 プロフィール
                             </div>
                         </Button>
