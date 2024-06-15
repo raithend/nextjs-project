@@ -8,9 +8,8 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
 
-import { SearchIcon } from "lucide-react"
+import { SearchBox } from "../search-box";
 
 export function RightSidebar() {
     return(
@@ -27,11 +26,7 @@ export function RightSidebar() {
                     </CardDescription>
                 </CardContent>
             </Card>
-            <Card>
-                <CardContent>
-                    <Input placeholder= "検索" />
-                </CardContent>
-            </Card>
+            <SearchBox/>
         </div>     
     )
 }
