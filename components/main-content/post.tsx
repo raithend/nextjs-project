@@ -23,8 +23,8 @@ import { UserRoundIcon, HeartIcon, MessageCircleIcon } from "lucide-react"
 export function Post() {
     return(
         <div>
-            <Card className="px-16">
-                <CardHeader className="flex-row items-center bg-slate-200 p-2">
+            <Card className="p-0 md:px-16">
+                <CardHeader className="flex-row items-center p-2">
                     <div>
                         <Avatar>
                             <AvatarImage src="https://github.com/shadcn.png" />
@@ -42,7 +42,7 @@ export function Post() {
                 </CardHeader>
 
                 <CardContent className="p-0">
-                    <Carousel className="w-full max-w-sm">
+                    <Carousel className="w-full max-w-md">
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
@@ -59,12 +59,16 @@ export function Post() {
                         </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    <div className="hidden md:block">
+                        <CarouselPrevious />                    
+                    </div>
+                    <div className="hidden md:block">
+                        <CarouselNext />                    
+                    </div>
                     </Carousel>
                 </CardContent>
 
-                <CardFooter className="bg-slate-200 p-2">
+                <CardFooter className="p-2">
                     <div>
                         <div>
                             <div className="my-1">
