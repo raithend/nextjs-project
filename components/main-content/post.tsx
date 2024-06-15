@@ -41,7 +41,7 @@ export function Post() {
                 </CardHeader>
 
                 <CardContent className="p-0">
-                    <Carousel className="w-full max-w-md">
+                    <Carousel>
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
