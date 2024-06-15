@@ -8,68 +8,80 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import { HomeIcon, UserRoundCheckIcon, BellIcon, HeartIcon, SettingsIcon, PlusCircleIcon} from "lucide-react"
+import { HomeIcon, UserRoundCheckIcon, BellIcon, HeartIcon, SettingsIcon, UserRoundIcon} from "lucide-react"
 import { Button } from "../ui/button";
 
 export function Navbar() {
     return(
-        <div className="hidden md:block">            
+        <div className="hidden md:block">
             <Card>
-                <CardHeader className="flex flex-row">
-                    <div>
+                <CardHeader className="flex flex-row items-center px-5 py-6">
                     <Avatar>
-                        <AvatarImage src="https://github.com/shadcn.png" />
-                        <AvatarFallback>Blackbuck</AvatarFallback>  
-                    </Avatar>                    
-                    </div>
-                    <div>
-                    <CardTitle>
-                        Blackbuck
-                    </CardTitle>                    
-                    </div>
+                        <Link href="/">
+                            <AvatarImage src="https://github.com/shadcn.png" />
+                            <AvatarFallback>BB</AvatarFallback>                          
+                        </Link>
+                    </Avatar>
+                    <CardTitle className="hidden lg:block text-3xl ml-4">
+                        <Link href="/">
+                            Blackbuck                        
+                        </Link>
+                    </CardTitle>
                 </CardHeader>
 
-                <div className="flex md:flex-col">
-                    <Link href="/" className="flex items-center justify-center">
-                        <HomeIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            ホーム
-                        </div>
+                <CardContent className="p-0">
+                    <Link href="/">
+                        <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
+                            <HomeIcon className="h-8 w-8" />
+                            <div className="hidden lg:block text-2xl m-4">
+                                ホーム
+                            </div>
+                        </Button>
                     </Link>
-                    <Link href="./follower" className="flex items-center justify-center">
-                        <UserRoundCheckIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            フォロー
-                        </div>
+                    <Link href="./follower">
+                        <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
+                            <UserRoundCheckIcon className="h-8 w-8" />
+                            <div className="hidden lg:block text-2xl m-4">
+                                フォロー
+                            </div>
+                        </Button>
                     </Link>
-                    <Link href="./notification" className="flex items-center justify-center">
-                        <BellIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            通知
-                        </div>
+                    <Link href="./notification">
+                        <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
+                            <BellIcon className="h-8 w-8" />
+                            <div className="hidden lg:block text-2xl m-4">
+                                通知
+                            </div>
+                        </Button>
                     </Link>
-                    <Link href="./like" className="flex items-center justify-center">
-                        <HeartIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            いいね
-                        </div>
+                    <Link href="./like">
+                        <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
+                            <HeartIcon className="h-8 w-8" />
+                            <div className="hidden lg:block text-2xl m-4">
+                                いいね
+                            </div>
+                        </Button>
                     </Link>
-                    <Link href="./setting" className="flex items-center justify-center">
-                        <SettingsIcon className="h-8 w-8" />
-                        <div className="hidden md:block">
-                            設定
-                        </div>
+                    <Link href="l/setting">
+                        <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
+                            <SettingsIcon className="h-8 w-8" />
+                            <div className="hidden lg:block text-2xl m-4">
+                                設定
+                            </div>
+                        </Button>
                     </Link>
-                    <Link href="./profile" className="flex items-center justify-center">
-                        <Avatar className="h-8 w-8">
-                            <AvatarImage src="https://github.com/shadcn.png" />
-                            <AvatarFallback>Blackbuck</AvatarFallback>  
-                        </Avatar>
-                        <div>
-                            プロフィール
-                        </div>
+                    <Link href="./profile">
+                        <Button variant="ghost" className="flex items-center justify-center px-6 py-8">
+                            <Avatar className="h-8 w-8">
+                                <AvatarImage src="https://github.com/shadcn.png" />
+                                <AvatarFallback><UserRoundIcon/></AvatarFallback>  
+                            </Avatar>                            
+                            <div className="hidden lg:block text-2xl m-4">
+                                プロフィール
+                            </div>
+                        </Button>
                     </Link>
-                </div>
+                </CardContent>
             </Card>
         </div>
     )
