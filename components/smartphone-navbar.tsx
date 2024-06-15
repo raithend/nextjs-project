@@ -4,7 +4,7 @@ import {
     CardContent,
   } from "@/components/ui/card"
 import { HomeIcon, UserRoundCheckIcon, BellIcon, HeartIcon, SettingsIcon } from "lucide-react"
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 export function SmartphoneNavbar() {
     return(

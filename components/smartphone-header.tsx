@@ -5,7 +5,7 @@ import {
     CardContent,
   } from "@/components/ui/card"
 import { UserRoundIcon } from "lucide-react"
-import { SearchBox } from "../search-box";
+import { SearchBox } from "./search-box";
 
 export function SmartphoneHeader() {
     return(
