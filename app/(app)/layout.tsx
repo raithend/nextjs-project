@@ -29,7 +29,7 @@ export default function Layout({
 
 				<div className="pb-14 md:pb-0"/>
 
-				<div className="block md:hidden fixed bottom-32 right-16">
+				<div className="block md:hidden fixed bottom-20 right-8">
 					<PostButton/>
 				</div>
 				
