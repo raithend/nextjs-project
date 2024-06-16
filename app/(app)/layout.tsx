@@ -17,17 +17,20 @@ export default function Layout({
 				</div>
 			</div>
 
-            <div className="block md:hidden w-full">
-                <SmartphoneHeader/>
-            </div>
+			<div className="md:w-[640px] flex-initial">
+				<div className="block md:hidden">
+					<SmartphoneHeader/>
+				</div>
 
-			<div className="max-w-3xl md:w-[640px] flex-initial">
-				{children}
+				<div className="">
+					{children}
+				</div>
+				
+				<div className="block md:hidden w-full fixed bottom-0">
+					<SmartphoneNavbar/>
+				</div>
 			</div>
-			
-            <div className="block md:hidden w-full fixed bottom-0">
-                <SmartphoneNavbar/>
-            </div>
+
 
 			<div className="hidden md:block md:w-64 xl:w-80 flex-none">
 				<div className="sticky top-0">
