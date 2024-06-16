@@ -25,6 +25,8 @@ export default function Layout({
 				<div className="">
 					{children}
 				</div>
+
+				<div className="pb-14 md:pb-0"/>
 				
 				<div className="block md:hidden w-full fixed bottom-0">
 					<SmartphoneNavbar/>

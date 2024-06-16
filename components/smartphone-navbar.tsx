@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button";
 export function SmartphoneNavbar() {
     return(
         <div>
-            <Card>
-                <CardContent className="flex justify-between py-2">
+            <Card className="rounded-none">
+                <CardContent className="flex justify-between p-2">
                     <Link href="/">
                         <Button variant="ghost" size="icon">
                             <HomeIcon className="h-8 w-8" />
