@@ -2,6 +2,7 @@ import { LeftSidebar } from "@/components/left-sidebar/left-sidebar";
 import { RightSidebar } from "@/components/right-sidebar/right-sidebar";
 import { SmartphoneNavbar } from "@/components/smartphone-navbar";
 import { SmartphoneHeader } from "@/components/smartphone-header";
+import { PostButton } from "@/components/post-button";
 
 export default function Layout({
 	children,
@@ -27,6 +28,10 @@ export default function Layout({
 				</div>
 
 				<div className="pb-14 md:pb-0"/>
+
+				<div className="block md:hidden fixed bottom-32 right-16">
+					<PostButton/>
+				</div>
 				
 				<div className="block md:hidden w-full fixed bottom-0">
 					<SmartphoneNavbar/>

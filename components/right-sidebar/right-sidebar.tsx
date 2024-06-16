@@ -11,9 +11,11 @@ import {
 
 import { SearchBox } from "../search-box";
 
+import { PostButton } from "../post-button";
+
 export function RightSidebar() {
     return(
-        <div>
+        <div className="grid gap-2">
             <Card>
                 <CardHeader>
                     <CardTitle>
@@ -26,7 +28,13 @@ export function RightSidebar() {
                     </CardDescription>
                 </CardContent>
             </Card>
+            
             <SearchBox/>
+
+            <div className="mt-8">
+                <PostButton/>
+            </div>
+
         </div>     
     )
 }
